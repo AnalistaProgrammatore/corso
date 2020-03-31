@@ -24,6 +24,23 @@ dataDictionary = data.reduce((acc, {stato, ...rest }) => ({
   [rest.data]: rest
 }), {})
 
+const dictionary = {
+  getTotal: function() {
+    return Object.keys(this).reduce((acc, cur) => {
+      return acc + this[cur].nuovi_attualmente_positivi
+    }, 0)
+  }
+}
+
+const decoratedDictionary = { ...dataDictionary, ...dictionary }
+Object.defineProperties(
+  decoratedDictionary,
+  {
+    getTotal: { enumerable: false }
+  }
+)
+console.log(decoratedDictionary.getTotal())
+
 
 /** FUNZIONE FILTRO PER DATA -> O(1) -> tempo di computazione costante -> HASH TABLE */
 const fastFilterByDate = (data, date) => data[date]
@@ -35,6 +52,6 @@ const days = [24, 23, 22].map(day => {
 
 const lastThreeDaysData = days.map(day => fastFilterByDate(dataDictionary, day))
 
-console.log(
+/*console.log(
   lastThreeDaysData
-)
+)*/
