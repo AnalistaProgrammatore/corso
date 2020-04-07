@@ -98,17 +98,51 @@ class LinkedList {
   }
 
 }
+/** ABSTRACT DATA TYPE 
+ * @property store -> contiene la coda (array o linkedList)
+ * @method enqueue -> inserisce un elemento alla fine della coda
+ * @method dequeue -> restituisce ed elimina l'elemento all'inizio della coda
+*/
+
+class PriorityQueue {
+  constructor() {
+    this.store = {}
+  }
+
+  enqueue(data, priority) {
+    if(this.store[priority]) return this.store[priority].insert(data)
+    this.store[priority] = new LinkedList()
+    this.store[priority].insert(data)
+  }
+
+  dequeue(priority) {
+    if(!this.store[priority]) return null
+    const result = this.store[priority].first()
+    this.store[priority].head = this.store[priority].head.next
+    return result
+  }
+
+  display() {
+    Object.keys(this.store).forEach(priority => this.store[priority].display())
+  }
+}
+
+const queue = new PriorityQueue()
+queue.enqueue('Mario', 0)
+queue.enqueue('Luca', 0)
+queue.enqueue('Matteo 3', 3)
+queue.enqueue('Giovanni 3', 3)
+
+queue.enqueue('Matteo 2', 2)
+queue.enqueue('Giovanni 2', 2)
+
+queue.enqueue('Matteo 1', 1)
+queue.enqueue('Giovanni 1', 1)
 
 
-/** USO LA CLASSE -> devo avere meno responsabilità possibile */
-const llist = new LinkedList()
-llist.insert({ hello: 'world' })
-llist.insert(1, current => current.hello && current.hello === 'world')
-llist.insert(4)
-llist.insert(3)
-
-//llist.display()
-
-llist.remove(current => current === 4)
-
-llist.display()
+console.log('estraggo elemento', queue.dequeue(1).data)
+//queue.display()
+console.log('estraggo elemento', queue.dequeue(0).data)
+console.log('estraggo elemento', queue.dequeue(3).data)
+console.log('estraggo elemento', queue.dequeue(3).data)
+//queue.display()

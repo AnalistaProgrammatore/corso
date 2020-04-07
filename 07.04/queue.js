@@ -98,17 +98,43 @@ class LinkedList {
   }
 
 }
+/** ABSTRACT DATA TYPE 
+ * @property store -> contiene la coda (array o linkedList)
+ * @method enqueue -> inserisce un elemento alla fine della coda
+ * @method dequeue -> restituisce ed elimina l'elemento all'inizio della coda
+*/
 
+class Queue {
+  constructor() {
+    this.store = new LinkedList()
+  }
 
-/** USO LA CLASSE -> devo avere meno responsabilità possibile */
-const llist = new LinkedList()
-llist.insert({ hello: 'world' })
-llist.insert(1, current => current.hello && current.hello === 'world')
-llist.insert(4)
-llist.insert(3)
+  enqueue(data) {
+    this.store.insert(data)
+  }
 
-//llist.display()
+  dequeue() {
+    const result = this.store.first()
+    this.store.head = this.store.head.next
+    return result
+  }
 
-llist.remove(current => current === 4)
+  display() {
+    this.store.display()
+  }
+}
 
-llist.display()
+const queue = new Queue()
+queue.enqueue('Mario')
+queue.enqueue('Luca')
+queue.enqueue('Matteo')
+queue.enqueue('Giovanni')
+
+queue.display()
+
+console.log('estraggo elemento', queue.dequeue().data)
+queue.display()
+
+console.log('estraggo elemento', queue.dequeue().data)
+console.log('estraggo elemento', queue.dequeue().data)
+console.log('estraggo elemento', queue.dequeue().data)
