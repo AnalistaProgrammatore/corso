@@ -91,7 +91,7 @@ class Graph {
      * e istanzio la coda a priorità usata dall'algoritmo
     */
     const distances = {}
-    const paths = {}
+    const prev = {}
     const pq = new PriorityQueue(this.vertex.length * this.vertex.length)
     
     /**
@@ -113,8 +113,7 @@ class Graph {
       if(vertex !== startVertex) {
         distances[vertex] = Infinity
       }
-      paths[vertex] = new Set()
-      if(vertex !== startVertex) paths[vertex].add(startVertex)
+      prev[vertex] = null
     }
 
     /** MAIN LOOP */
@@ -139,12 +138,29 @@ class Graph {
           * inserisco il vertice analizzato precedentemente nel set dei percorsi di neighbor
           * escludendo startVertex dall'inserimento
           */
-          paths[neighbor.vertex].add(currentVertex)
+          prev[neighbor.vertex] = currentVertex
           // inserisco nella coda il neighbor trovato con priorità impostata alla nuova distanza
           pq.enqueue(neighbor.vertex, distance)
         }
       }
     }
+
+    /** FUNZIONE PER LA RICERCA DEL PERCORSO MINIMO DATO UN NODO DESTINAZIONE */
+    const getPath = dest => {
+      const paths = new Stack() // inizializza lo stack dei passi
+      while(prev[dest]) { // finchè l'algoritmo di dijkstra ha marcato un passaggio su un vertice
+        paths.push(dest) // inserisci il nodo destinazione nello stack
+        dest = prev[dest] // sostituisci il nuovo dest con il precedente nodo visionato da dijkstra
+      }
+      return paths.container
+    }
+
+    /** COSTRUISCI I PERCORSI PER TUTTI I VERTICI DEL GRAFO */
+    const paths = {}
+    for(const p in prev) {
+      paths[p] = getPath(p)
+    }
+
     return { distances, paths }
   }
 }
