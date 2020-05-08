@@ -8,26 +8,27 @@
 const fs = require('fs')
 const path = require('path')
 const request = require('request')
-const { urlToFilename } = require('./utils')
+const { urlToFilepath } = require('../utils')
 
 function spider(url, callback) {
-  const filename = urlToFilename(url)
-  fs.access(filename, fs.constants.F_OK, err => {
+  const filepath = urlToFilepath(url)
+  fs.access(filepath, fs.constants.F_OK, err => {
     if(err) {
       console.log(`Downloading ${url}`)
       request(url, (err, response, body) => {
+        console.log(response.headers)
         if(err) {
           callback(err)
         } else {
-          fs.mkdir(path.dirname(filename), { recursive: true }, err => {
+          fs.mkdir(path.dirname(filepath), { recursive: true }, err => {
             if(err) {
               callback(err)
             } else {
-              fs.writeFile(filename, body, err => {
+              fs.writeFile(filepath, body, err => {
                 if(err) {
                   callback(err)
                 } else {
-                  callback(null, filename, true)
+                  callback(null, filepath, true)
                 }
               })
             }
@@ -35,7 +36,7 @@ function spider(url, callback) {
         }
       })
     } else {
-      callback(null, filename, false)
+      callback(null, filepath, false)
     }
   })
 }
