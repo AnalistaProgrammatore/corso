@@ -7,6 +7,96 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "02.05/hello.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.05/hello.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.12/1-environment",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.12/1-environment.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.12/2-global",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.12/2-global.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.12/3-functions",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.12/3-functions.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.12/4-functions",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.12/4-functions.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.12/5-hof",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.12/5-hof.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.19/1-esercizio-1.3",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.19/1-esercizio-1.3.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.19/2-esercizio-1.4",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.19/2-esercizio-1.4.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.19/3-objects",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.19/3-objects.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.19/4-functions",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.19/4-functions.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "02.26/1-functions",
             "skipFiles": [
                 "<node_internals>/**"
