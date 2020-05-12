@@ -1,0 +1,410 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.05/hello.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.05/hello.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.12/1-environment",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.12/1-environment.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.12/2-global",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.12/2-global.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.12/3-functions",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.12/3-functions.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.12/4-functions",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.12/4-functions.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.12/5-hof",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.12/5-hof.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.19/1-esercizio-1.3",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.19/1-esercizio-1.3.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.19/2-esercizio-1.4",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.19/2-esercizio-1.4.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.19/3-objects",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.19/3-objects.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.19/4-functions",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.19/4-functions.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.26/1-functions",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.26/1-functions.js",
+            "cwd": "${workspaceFolder}/02.26"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "02.26/2-hof",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/02.26/2-hof.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "03.04/esercizi",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/03.04/esercizi.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "03.04/getters-setters",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/03.04/getters-setters.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "03.04/new",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/03.04/new.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "03.04/properties",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/03.04/properties.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "03.04/this",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/03.04/this.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "03.25/covid-array",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/03.25/covid-array.js",
+            "cwd": "${workspaceFolder}/03.25"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "03.25/covid-dictionary",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/03.25/covid-dictionary.js",
+            "cwd": "${workspaceFolder}/03.25"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "03.31/class",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/03.31/class.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "03.31/extend-array",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/03.31/extend-array.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "03.31/prototype",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/03.31/prototype.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "04.07/baseConverter",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/04.07/baseConverter.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "04.07/factorial",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/04.07/factorial.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "04.07/list",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/04.07/list.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "04.07/priorityQueue",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/04.07/priorityQueue.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "04.07/queue",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/04.07/queue.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "04.07/stack",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/04.07/stack.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "04.15",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/04.15/binary-search-tree.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "04.17",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/04.17/test.js",
+            "cwd": "${workspaceFolder}/04.17"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "04.22/errors",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/04.22/errors.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "04.22/regexp",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/04.22/regexp.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "04.22/test-prim-mst",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/04.22/test-prim-mst.js",
+            "cwd": "${workspaceFolder}/04.22"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "04.22/test-tsort",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/04.22/test-tsort.js",
+            "cwd": "${workspaceFolder}/04.22"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "04.28/callback",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/04.28/callback.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "04.28/racer",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/04.28/racer.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "04.28/readfile",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/04.28/readfile.js",
+            "cwd": "${workspaceFolder}/04.28"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "04.28/setTimeout",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/04.28/setTimeout.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "05.05/callback-error",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/05.05/callback-error.js",
+            "cwd": "${workspaceFolder}/05.05"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "05.05/module",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/05.05/module.js",
+            "cwd": "${workspaceFolder}/05.05"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "05.05/pattern",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/05.05/pattern.js",
+            "cwd": "${workspaceFolder}/05.05"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "05.05/zalgo",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/05.05/zalgo.js",
+            "cwd": "${workspaceFolder}/05.05"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "05.08",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/05.08/index.js",
+            "cwd": "${workspaceFolder}/05.08",
+            "args": [
+                "http://nodejs.org"
+            ]
+        }
+    ]
+}
