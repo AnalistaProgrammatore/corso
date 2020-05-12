@@ -416,7 +416,8 @@
             "program": "${workspaceFolder}/05.12/index.js",
             "cwd": "${workspaceFolder}/05.12",
             "args": [
-                "http://nodejs.org"
+                "http://nodejs.org",
+                "1"
             ]
         }
     ]
