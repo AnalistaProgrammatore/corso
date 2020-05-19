@@ -458,7 +458,11 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/05.19/spider/index.js",
-            "cwd": "${workspaceFolder}/05.19/spider"
+            "cwd": "${workspaceFolder}/05.19/spider",
+            "args": [
+                "http://nodejs.org",
+                "1"
+            ]
         }
     ]
 }
