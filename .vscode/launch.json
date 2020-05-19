@@ -463,6 +463,16 @@
                 "http://nodejs.org",
                 "1"
             ]
-        }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "05.19/promises",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/05.19/promises.js",
+            "cwd": "${workspaceFolder}/05.19"
+        },
     ]
 }
