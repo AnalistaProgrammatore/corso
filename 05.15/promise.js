@@ -6,11 +6,12 @@ asyncOperation(arg, (err, result) => {
   // fai qualcosa con il risultato
 })
 
+// PROMISE ↴
 /**
  * STATI DI UNA PROMISE
  * 1. pending
  * 2. fulfilled -> gestito da then
- * 3. rjected -> gestito da then
+ * 3. rejected -> gestito da then
  * 4. settled 
  */
 
