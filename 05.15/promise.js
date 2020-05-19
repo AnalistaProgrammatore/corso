@@ -36,13 +36,11 @@ const asyncOperation2 = arg => new Promise()
 
 asyncOperation(arg)
   .then(result => {
-      // fai qualcosa con il risultato
-    }
-  )
+    // fai qualcosa con il risultato
+  })
   .catch(err => {
       //gestisci l'errore
-    }
-  )
+  })
 
 const promiseOp = asyncOperation()
   .then(result => {
