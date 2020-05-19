@@ -1,14 +1,11 @@
 const fs = require('fs')
 const { promisify } = require('util')
-const writeFile = fs.promises.writeFile
 const path = require('path')
 const request = promisify(require('request'))
+const readFile = fs.promises.readFile
+const writeFile = fs.promises.writeFile
+const { urlToFilepath } = require('../utils')
 
-const serial = tasks => tasks.reduce(
-  (prev, task) => {
-    return prev.then(() => task())
-  }, Promise.resolve()
-)
 
 function saveFile(filepath, contents) {
   return fs.promises.mkdir(path.dirname(filepath), { recursive: true })
@@ -24,4 +21,13 @@ function download(url, filepath) {
     .catch(err => Promise.reject(err))
 }
 
-module.exports = { download, serial }
+function spider(url, nesting) {
+  const filepath = urlToFilepath(url)
+  return readFile(filepath, 'utf-8')
+    .catch(err => {
+      if(err.code !== 'ENOENT') return Promise.reject(err)
+      return download(url, filepath)
+    })
+}
+
+module.exports = spider

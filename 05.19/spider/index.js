@@ -1,4 +1,4 @@
-const spider = require('./lib/v4')
+const spider = require('./lib/v4-serial')
 
 let nesting = parseInt(process.argv[3])
 if(isNaN(nesting)) nesting = 1
