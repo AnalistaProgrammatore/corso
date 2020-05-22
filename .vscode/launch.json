@@ -474,5 +474,52 @@
             "program": "${workspaceFolder}/05.19/promises.js",
             "cwd": "${workspaceFolder}/05.19"
         },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "05.22/iterables",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/05.22/iterables.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "05.22/generator",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/05.22/generator.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "05.22/makeRangeIterator",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/05.22/makeRangeIterator.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "05.22/asyncGenerator",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/05.22/asyncGenerator.js",
+            "cwd": "${workspaceFolder}/05.22"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "05.22/asyncGeneratorPromise",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/05.22/asyncGeneratorPromise.js",
+            "cwd": "${workspaceFolder}/05.22"
+        }
     ]
 }
