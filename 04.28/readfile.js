@@ -54,6 +54,6 @@ reader1.onDataReady(data => {
 
   const reader3 = createFileReader('racer.js')
   reader3.onDataReady(data => {
-    console.log('Second call')
+    console.log('Third call')
   })
 })
