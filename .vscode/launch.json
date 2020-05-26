@@ -568,12 +568,22 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "05.26/buffers/read",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/05.26/buffers/read.js",
+            "cwd": "${workspaceFolder}/05.26/buffers"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "05.26/buffers/serializable",
             "skipFiles": [
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/05.26/buffers/serializable.js",
-            "cwd": "${workspaceFolder}/05.26/buffers/serializable"
+            "cwd": "${workspaceFolder}/05.26/buffers"
         }
     ]
 }
