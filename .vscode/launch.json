@@ -520,6 +520,60 @@
             ],
             "program": "${workspaceFolder}/05.22/asyncGeneratorPromise.js",
             "cwd": "${workspaceFolder}/05.22"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "05.26/asyncFlow",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/05.26/asyncFlow.js",
+            "cwd": "${workspaceFolder}/05.26"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "05.26/asyncCoSimple",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/05.26/asyncCoSimple.js",
+            "cwd": "${workspaceFolder}/05.26",
+            "args": [
+                "asyncFlow.js",
+                "asyncCoSimple.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "05.26/asyncAwait",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/05.26/asyncAwait.js",
+            "cwd": "${workspaceFolder}/05.26"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "05.26/buffers",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/05.26/buffers/index.js",
+            "cwd": "${workspaceFolder}/05.26/buffers"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "05.26/buffers/serializable",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/05.26/buffers/serializable.js",
+            "cwd": "${workspaceFolder}/05.26/buffers/serializable"
         }
     ]
 }
