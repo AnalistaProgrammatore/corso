@@ -10,4 +10,4 @@ for(const byte of buffer) {
 }
 
 // 100 -> Big Endian
-// 001 -> Little Endinan -> 4
+// 001 -> Little Endian -> 4
