@@ -643,7 +643,35 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/05.29/chatTcpClient.js",
-            "cwd": "${workspaceFolder}/05.29"
+            "cwd": "${workspaceFolder}/05.29",
+            "args": [
+                "127.0.0.1",
+                "3000"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.05/chat/server",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.05/chat/server.js",
+            "cwd": "${workspaceFolder}/06.05/chat"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.05/chat/client",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.05/chat/client.js",
+            "cwd": "${workspaceFolder}/06.05/chat",
+            "args": [
+                "127.0.0.1",
+                "3000"
+            ]
         }
     ]
 }
