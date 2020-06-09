@@ -672,6 +672,70 @@
                 "127.0.0.1",
                 "3000"
             ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.09/secure-chat/server",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.09/secure-chat/server.js",
+            "cwd": "${workspaceFolder}/06.09/secure-chat"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.09/secure-chat/client",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.09/secure-chat/client.js",
+            "cwd": "${workspaceFolder}/06.09/secure-chat",
+            "args": [
+                "127.0.0.1",
+                "3000"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.09/piping-gzip",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.09/piping-gzip.js",
+            "cwd": "${workspaceFolder}/06.09"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.09/piping-gunzip",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.09/piping-gunzip.js",
+            "cwd": "${workspaceFolder}/06.09"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.09/piping-encrypt",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.09/piping-encrypt.js",
+            "cwd": "${workspaceFolder}/06.09"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.09/piping-decrypt",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.09/piping-decrypt.js",
+            "cwd": "${workspaceFolder}/06.09"
         }
     ]
 }
