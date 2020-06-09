@@ -1,6 +1,12 @@
-const ChatProtocol = require('./protocol/ChatProtocol')
+const SecureChatProtocol = require('./protocol/SecureChatProtocol')
 
 let clients = new Map()
+
+let sharedKey = SecureChatProtocol.generateSharedKey()
+
+setInterval(() => {
+  sharedKey = SecureChatProtocol.generateSharedKey()
+}, 10000)
 
 function broadcast(message, sender) {
   if(clients.length < 2) return
@@ -13,7 +19,7 @@ function broadcast(message, sender) {
 
 require('net').createServer(socket =>  {
   //STREAM -> ChatProtocol
-  const protocol = new ChatProtocol(socket)
+  const protocol = new SecureChatProtocol(socket)
   clients.set(protocol.uuid, protocol)
   console.log('client connected', protocol.remoteAddress, 'with uuid', protocol.uuid)
 
