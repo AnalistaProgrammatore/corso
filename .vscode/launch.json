@@ -736,6 +736,84 @@
             ],
             "program": "${workspaceFolder}/06.09/piping-decrypt.js",
             "cwd": "${workspaceFolder}/06.09"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.12/secure-chat/server",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.12/secure-chat/server.js",
+            "cwd": "${workspaceFolder}/06.12/secure-chat"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.12/secure-chat/client",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.12/secure-chat/client.js",
+            "cwd": "${workspaceFolder}/06.12/secure-chat",
+            "args": [
+                "127.0.0.1",
+                "3000"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.12/asym-keygenerator",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.12/asym-keygenerator.js",
+            "cwd": "${workspaceFolder}/06.12"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.12/asym-crypt",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.12/asym-crypt.js",
+            "cwd": "${workspaceFolder}/06.12"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.12/asym-decrypt",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.12/asym-decrypt.js",
+            "cwd": "${workspaceFolder}/06.12"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.12/tls-chat/server",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.12/tls-chat/server.js",
+            "cwd": "${workspaceFolder}/06.12/tls-chat"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.12/tls-chat/client",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.12/tls-chat/client.js",
+            "cwd": "${workspaceFolder}/06.12/tls-chat",
+            "args": [
+                "127.0.0.1",
+                "3000"
+            ]
         }
     ]
 }
