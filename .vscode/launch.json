@@ -814,6 +814,34 @@
                 "127.0.0.1",
                 "3000"
             ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.16/factory",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.16/factory.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.16/proxy",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.16/proxy.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.16/middleware-express",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.16/middleware-express/index.js",
+            "cwd": "${workspaceFolder}/06.16/middleware-express"
         }
     ]
 }
