@@ -842,6 +842,66 @@
             ],
             "program": "${workspaceFolder}/06.16/middleware-express/index.js",
             "cwd": "${workspaceFolder}/06.16/middleware-express"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.19/login-hardcoded-dependencies/populate_db",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.19/login-hardcoded-dependencies/populate_db.js",
+            "cwd": "${workspaceFolder}/06.19/login-hardcoded-dependencies"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.19/login-hardcoded-dependencies",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.19/login-hardcoded-dependencies/entry.js",
+            "cwd": "${workspaceFolder}/06.19/login-hardcoded-dependencies"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.19/login-di/populate_db",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.19/login-di/populate_db.js",
+            "cwd": "${workspaceFolder}/06.19/login-di"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.19/login-di",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.19/login-di/entry.js",
+            "cwd": "${workspaceFolder}/06.19/login-di"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.19/login-servicelocator/populate_db",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.19/login-servicelocator/populate_db.js",
+            "cwd": "${workspaceFolder}/06.19/login-servicelocator"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.19/login-servicelocator",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.19/login-servicelocator/entry.js",
+            "cwd": "${workspaceFolder}/06.19/login-servicelocator"
         }
     ]
 }
