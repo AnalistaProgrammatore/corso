@@ -1,9 +1,9 @@
 const jwt = require('jwt-simple')
 
-module.exports = (db, secretKey) => {
+module.exports = serviceLocator => {
 
-  const tokenSecret = secretKey
-  const users = db
+  const tokenSecret = serviceLocator.get('secretKey')
+  const users = serviceLocator.get('db')
 
   function login(username, password) {
     return users.read(username)

@@ -1,6 +1,7 @@
 const level = require('level')
 
-module.exports = dbName => {
+module.exports = serviceLocator => {
+  const dbName = serviceLocator.get('dbName')
   const db = level(dbName)
 
   function read(key) {
