@@ -902,6 +902,46 @@
             ],
             "program": "${workspaceFolder}/06.19/login-servicelocator/entry.js",
             "cwd": "${workspaceFolder}/06.19/login-servicelocator"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.23/login-dicontainer/populate_db",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.23/login-dicontainer/populate_db.js",
+            "cwd": "${workspaceFolder}/06.23/login-dicontainer"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.23/login-dicontainer",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.23/login-dicontainer/entry.js",
+            "cwd": "${workspaceFolder}/06.23/login-dicontainer"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.23/auth-server/populate_db",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.23/auth-server/populate_db.js",
+            "cwd": "${workspaceFolder}/06.23/auth-server"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.23/auth-server",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.23/auth-server/entry.js",
+            "cwd": "${workspaceFolder}/06.23/auth-server"
         }
     ]
 }
