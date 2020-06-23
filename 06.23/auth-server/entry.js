@@ -2,18 +2,22 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const http = require('http')
 
-const pluginA = require('plugin-a')
-console.log(pluginA())
+// inizializzazione dei plugins
+const installedPlugins = [
+  { id: 0, name: 'auth-logout' }
+]
 
-const diContainer = require('./lib/diContainer')
+for(const plugin of installedPlugins) {
+  try {
+    const install = require(plugin.name)
+    console.log(install)
+    install(app)
+  } catch(err) {
+    console.log(err)
+  }
+}
 
-diContainer.register('dbName', 'users-db')
-diContainer.register('secretKey', 'secret')
-diContainer.factory('db', require('./auth/db'))
-diContainer.factory('authService', require('./auth/authService'))
-diContainer.factory('authController', require('./auth/authController'))
-
-const authController = diContainer.get('authController')
+const authController = require('./lib/authController')
 
 const app = express()
 

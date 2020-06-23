@@ -7,6 +7,7 @@ module.exports = authService => {
       })
       .catch(err => {
         console.log(err)
+        EventEmitters.emit('post-login-error', username, password, token)
         res.status(401).send({ ok: false, err: 'INVALID_LOGIN' })
       })
   }

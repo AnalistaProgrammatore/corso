@@ -1,4 +1,4 @@
-function createServiceLocator() {
+function createDiContainer() {
   const dependecies = {}
   const factories = {}
 
@@ -29,5 +29,7 @@ function createServiceLocator() {
     return factory.apply(null, actuals)
   }
 
-  return serviceLocator
+  return diContainer
 }
+
+module.exports = createDiContainer()
