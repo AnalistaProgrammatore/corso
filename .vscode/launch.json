@@ -946,7 +946,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "06.26/app",
+            "name": "06.26/clustering/app",
             "skipFiles": [
                 "<node_internals>/**"
             ],
@@ -956,12 +956,45 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "06.26/cluster",
+            "name": "06.26/clustering/cluster",
             "skipFiles": [
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/06.26/clustering/cluster.js",
             "cwd": "${workspaceFolder}/06.26/clustering"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.26/load-balancer/app",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.26/load-balancer/app.js",
+            "cwd": "${workspaceFolder}/06.26/load-balancer"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.26/load-balancer/cluster",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.26/load-balancer/cluster.js",
+            "cwd": "${workspaceFolder}/06.26/load-balancer",
+            "args": [
+                "8081"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.26/load-balancer/load-balancer",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.26/load-balancer/load-balancer.js",
+            "cwd": "${workspaceFolder}/06.26/load-balancer"
         }
     ]
 }
