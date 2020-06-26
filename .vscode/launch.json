@@ -995,6 +995,29 @@
             ],
             "program": "${workspaceFolder}/06.26/load-balancer/load-balancer.js",
             "cwd": "${workspaceFolder}/06.26/load-balancer"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.26/p2p-loadbalancing/app",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.26/p2p-loadbalancing/app.js",
+            "cwd": "${workspaceFolder}/06.26/p2p-loadbalancing",
+            "args": [
+                "8081"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.26/p2p-loadbalancing/client",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.26/p2p-loadbalancing/client.js",
+            "cwd": "${workspaceFolder}/06.26/p2p-loadbalancing"
         }
     ]
 }
