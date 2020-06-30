@@ -1,0 +1,25 @@
+[
+  {
+    "uid": "load-balancer",
+    "append": true,
+    "watch": true,
+    "script": "load-balancer.js",
+    "sourceDir": "./"
+  },
+  {
+    "uid": "process-1",
+    "append": true,
+    "watch": true,
+    "script": "cluster.js",
+    "sourceDir": "./",
+    "args": ["8081"]
+  },
+  {
+    "uid": "process-2",
+    "append": true,
+    "watch": true,
+    "script": "cluster.js",
+    "sourceDir": "./",
+    "args": ["8082"]
+  }
+]
