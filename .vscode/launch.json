@@ -1018,6 +1018,32 @@
             ],
             "program": "${workspaceFolder}/06.26/p2p-loadbalancing/client.js",
             "cwd": "${workspaceFolder}/06.26/p2p-loadbalancing"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "07.03/basic_http_chat",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/07.03/basic_http_chat/app.js",
+            "cwd": "${workspaceFolder}/07.03/basic_http_chat",
+            "args": [
+                "8080"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "07.03/chat-redis",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/07.03/chat-redis/app.js",
+            "cwd": "${workspaceFolder}/07.03/chat-redis",
+            "args": [
+                "8080"
+            ]
         }
     ]
 }
