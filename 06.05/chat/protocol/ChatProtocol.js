@@ -11,7 +11,7 @@ class ChatProtocol extends stream.Duplex {
   constructor(socket) {
     super({ objectMode: true })
 
-    this.name = '#unamed'
+    this.name = '#unnamed'
     this.uuid = uuid()
 
     this.paused = false
