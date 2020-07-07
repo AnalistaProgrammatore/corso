@@ -966,16 +966,6 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "06.26/load-balancer/app",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}/06.26/load-balancer/app.js",
-            "cwd": "${workspaceFolder}/06.26/load-balancer"
-        },
-        {
-            "type": "node",
-            "request": "launch",
             "name": "06.26/load-balancer/cluster",
             "skipFiles": [
                 "<node_internals>/**"
@@ -1018,6 +1008,29 @@
             ],
             "program": "${workspaceFolder}/06.26/p2p-loadbalancing/client.js",
             "cwd": "${workspaceFolder}/06.26/p2p-loadbalancing"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.30/load-balancer/cluster",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.30/load-balancer/cluster.js",
+            "cwd": "${workspaceFolder}/06.30/load-balancer",
+            "args": [
+                "8081"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "06.30/load-balancer/load-balancer",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/06.30/load-balancer/load-balancer.js",
+            "cwd": "${workspaceFolder}/06.30/load-balancer"
         },
         {
             "type": "node",

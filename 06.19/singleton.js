@@ -13,7 +13,7 @@ class Db {
     this.socket = new DbSocket(username, password, host)
   }
 
-  wirte() {}
+  write() {}
 
   read() {}
 
