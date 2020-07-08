@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic HTTP CHAT</title>
+  <script>
+    const ws = new WebSocket(`ws://${window.document.location.host}`)
+    document.addEventListener('DOMContentLoaded', () => {
+      const sendButtonEl = document.getElementById('msgSend')
+      sendButtonEl.addEventListener('click', sendMessage)
+    })
+
+    ws.onmessage = createMessage //SUBSCRIBER
+
+    function createMessage(message) {
+      const messageContainerEl = document.getElementById('messages')
+      const newMessageEl = document.createElement('div')
+      newMessageEl.innerHTML = message.data
+      messageContainerEl.appendChild(newMessageEl)
+    }
+
+    function sendMessage() {
+      const messageEl = document.getElementById('msgBox')
+      const message = messageEl.value
+      if(!message) return
+      ws.send(message) // PUBLISHER
+    }
+  </script>
+</head>
+<body>
+  Messages:
+  <div id="messages"></div>
+  <input type="text" placeholder="Send a message" id="msgBox">
+  <input type="button" value="Send" id="msgSend">
+</body>
+</html>
