@@ -1108,14 +1108,7 @@
             "program": "${workspaceFolder}/07.07/chat-history-amqp/app.js",
             "cwd": "${workspaceFolder}/07.07/chat-history-amqp",
             "args": [
-                "--http",
                 "8080",
-                "--pub",
-                "5000",
-                "--sub",
-                "5001",
-                "--sub",
-                "5002"
             ]
         },
         {
