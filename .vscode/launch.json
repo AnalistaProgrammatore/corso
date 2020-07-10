@@ -1120,6 +1120,19 @@
             ],
             "program": "${workspaceFolder}/07.07/chat-history-amqp/history-service.js",
             "cwd": "${workspaceFolder}/07.07/chat-history-amqp"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "07.10/tenjin-test",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/07.10/tenjin-test/index.js",
+            "cwd": "${workspaceFolder}/07.10/tenjin-test",
+            "args": [
+                "8080",
+            ]
         }
     ]
 }
