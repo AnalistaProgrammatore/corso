@@ -1057,6 +1057,82 @@
             "args": [
                 "8080"
             ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "07.07/minimist",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/07.07/chat-zmq/minimist.js",
+            "cwd": "${workspaceFolder}/07.07/chat-zmq",
+            "args": [
+                "--sub",
+                "3000",
+                "--sub",
+                "5000",
+                "--pub",
+                "7000",
+                "--http",
+                "8080"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "07.07/chat-zmq",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/07.07/chat-zmq/app.js",
+            "cwd": "${workspaceFolder}/07.07/chat-zmq",
+            "args": [
+                "--http",
+                "8080",
+                "--pub",
+                "5000",
+                "--sub",
+                "5001",
+                "--sub",
+                "5002"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "07.07/chat-history-amqp",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/07.07/chat-history-amqp/app.js",
+            "cwd": "${workspaceFolder}/07.07/chat-history-amqp",
+            "args": [
+                "8080",
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "07.07/chat-history-amqp/history-service",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/07.07/chat-history-amqp/history-service.js",
+            "cwd": "${workspaceFolder}/07.07/chat-history-amqp"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "07.10/tenjin-test",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/07.10/tenjin-test/index.js",
+            "cwd": "${workspaceFolder}/07.10/tenjin-test",
+            "args": [
+                "8080",
+            ]
         }
     ]
 }
