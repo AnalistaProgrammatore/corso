@@ -1,0 +1,35 @@
+{
+  "0" : {
+    "title": "Ubuntu Linux Server Basics",
+    "image": "/img/course_linux.jpg",
+    "short": "Learn the best practices of clean design and architecture of Android applications",
+    "start": "04/05/2020",
+    "end": "04/05/2020",
+    "language": "English",
+    "description": "Learn the best practices of clean design and architecture of Android applications",
+    "teacher": 0,
+    "students": []
+  },
+  "1" : {
+    "title": "Advanced React and Redux",
+    "image": "/img/course_react.jpg",
+    "short": "Detailed walkthroughs on advanced React and Redux concepts - Authentication, Testing, Middlewares, HOC's, and Deployment",
+    "start": "04/05/2020",
+    "end": "04/05/2020",
+    "language": "English",
+    "description": "Detailed walkthroughs on advanced React and Redux concepts - Authentication, Testing, Middlewares, HOC's, and Deployment",
+    "teacher": 0,
+    "students": []
+  },
+  "2" : {
+    "title": "Android Architecture Masterclass",
+    "image": "/img/course_android.jpg",
+    "short": "Learn the best practices of clean design and architecture of Android applications",
+    "start": "04/05/2020",
+    "end": "04/05/2020",
+    "language": "English",
+    "description": "Learn the best practices of clean design and architecture of Android applications",
+    "teacher": 0,
+    "students": []
+  }
+}

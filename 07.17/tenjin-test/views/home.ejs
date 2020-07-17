@@ -38,104 +38,28 @@
     <!-- Content Row -->
     <div id="courseCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col-md-4 mb-5">
-              <div class="card h-100">
-                <img class="card-img-top" src="/img/course_react.jpg">
-                <div class="card-body">
-                  <h2 class="card-title">Advanced React and Redux</h2>
-                  <p class="card-text">Detailed walkthroughs on advanced React and Redux concepts - Authentication,
-                    Testing, Middlewares, HOC's, and Deployment </p>
+        <% for(let i = 0; i < courses.length; i++) { %>
+          <div class="carousel-item <% if (i === 0) { %>active<% } %>">
+            <div class="row">
+              <% for(const course of courses[i]) { %>
+                <div class="col-md-4 mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" src="<%= course.image %> ">
+                    <div class="card-body">
+                      <h2 class="card-title"><%= course.title %></h2>
+                      <p class="card-text"><%= course.short %> </p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="/course/<%= course.id %> " class="btn btn-block btn-primary btn-sm">
+                        Learn more<i class="fas fa-arrow-right mt-1 ml-2"></i>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="card-footer">
-                  <a href="/course/1" class="btn btn-block btn-primary btn-sm">
-                    Learn more<i class="fas fa-arrow-right mt-1 ml-2"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- /.col-md-4 -->
-            <div class="col-md-4 mb-5">
-              <div class="card h-100">
-                <img class="card-img-top" src="img/course_android.jpg">
-                <div class="card-body">
-                  <h2 class="card-title">Android Architecture Masterclass</h2>
-                  <p class="card-text">Learn the best practices of clean design and architecture of Android applications
-                </div>
-                <div class="card-footer">
-                  <a href="/course/android-architeture-masterclass" class="btn btn-block btn-primary btn-sm">
-                    Learn more<i class="fas fa-arrow-right mt-1 ml-2"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- /.col-md-4 -->
-            <div class="col-md-4 mb-5">
-              <div class="card h-100">
-                <img class="card-img-top" src="/img/course_linux.jpg">
-                <div class="card-body">
-                  <h2 class="card-title">Ubuntu Linux Server Basics</h2>
-                  <p class="card-text">Learn Ubuntu Server administration in 3 days with this step-by-step course for
-                    beginners.</p>
-                </div>
-                <div class="card-footer">
-                  <a href="/course/ubuntu-linux-server-basics" class="btn btn-block btn-primary btn-sm">
-                    Learn more<i class="fas fa-arrow-right mt-1 ml-2"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- /.col-md-4 -->
-
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-md-4 mb-5">
-              <div class="card h-100">
-                <img class="card-img-top" src="/img/course_node.jpg">
-                <div class="card-body">
-                  <h2 class="card-title">Learn and Understand NodeJS</h2>
-                  <p class="card-text">Dive deep under the hood of NodeJS. Learn V8, Express, the MEAN stack, core Javascript concepts, and more </p>
-                </div>
-                <div class="card-footer">
-                  <a href="/course/learn-and-understand-nodejs" class="btn btn-block btn-primary btn-sm">
-                    Learn more<i class="fas fa-arrow-right mt-1 ml-2"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-5">
-              <div class="card h-100">
-                <img class="card-img-top" src="/img/course-web.jpg">
-                <div class="card-body">
-                  <h2 class="card-title">The Complete Web Developer Course</h2>
-                  <p class="card-text">Learn Web Development by building 25 websites and mobile apps using HTML, CSS, Javascript, PHP, Python, MySQL & more!</p>
-                </div>
-                <div class="card-footer">
-                  <a href="/course/the-complete-web-developer-course" class="btn btn-block btn-primary btn-sm">
-                    Learn more<i class="fas fa-arrow-right mt-1 ml-2"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-5">
-              <div class="card h-100">
-                <img class="card-img-top" src="/img/course-linux-2.jpg">
-                <div class="card-body">
-                  <h2 class="card-title">Linux for Beginners</h2>
-                  <p class="card-text">An Introduction to the Linux Operating System and Command Line</p>
-                </div>
-                <div class="card-footer">
-                  <a href="/course/linux-for-beginners" class="btn btn-block btn-primary btn-sm">
-                    Learn more<i class="fas fa-arrow-right mt-1 ml-2"></i>
-                  </a>
-                </div>
-              </div>
+              <% } %>
             </div>
           </div>
-        </div>
+        <% } %>
       </div>
       <a class="carousel-control-prev" href="#courseCarousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon"></span>
