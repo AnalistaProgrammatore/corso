@@ -1133,6 +1133,19 @@
             "args": [
                 "8080",
             ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "07.17/tenjin-test",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/07.17/tenjin-test/index.js",
+            "cwd": "${workspaceFolder}/07.17/tenjin-test",
+            "args": [
+                "8080",
+            ]
         }
     ]
 }

@@ -5,10 +5,10 @@ module.exports = {
     try {
       const courses = require('../models').courses
       courses.read()
-        .then(foundedCourses => {
-          console.log(foundedCourses)
-          const coursesArray = Object.keys(foundedCourses).reduce((acc, courseId) => {
-            return [ ...acc, { id: courseId, ...foundedCourses[courseId]} ]
+        .then(foundCourses => {
+          console.log(foundCourses)
+          const coursesArray = Object.keys(foundCourses).reduce((acc, courseId) => {
+            return [ ...acc, { id: courseId, ...foundCourses[courseId]} ]
           }, [])
           const viewCourses = []
           let j = -1;
