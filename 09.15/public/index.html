@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Tree</title>
+  <style>
+    .red {
+      color: red;
+    }
+    .yellow {
+      color: yellow;
+    }
+  </style>
+<body>
+  <ol id="ol" data-something="non-standard" data-someone="non-standard">
+    <li class="red">NodeJs</li>
+    <li class="yellow">DOM</li>
+    <li class="red">BOM</li>
+  </ol>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+  </ul>
+  <script>
+    const ol = document.getElementById('ol')
+    const lis = ol.getElementsByTagName('li')
+    //console.dir(lis)
+    //const yellowLis = ol.getElementsByClassName('yellow')
+    //const yellowLis = ol.querySelector('.red')
+    //console.log(yellowLis.toString())
+    /*console.log(ol.hasAttribute('something'))
+    console.log(ol.getAttribute('something'))
+    ol.setAttribute('something', 'modified')
+    console.log(ol.getAttribute('something'))
+    ol.removeAttribute('something')
+    console.log(ol.hasAttribute('something'))*/
+    console.log(ol.dataset['something'])
+  </script>
+</body>
+</html>
