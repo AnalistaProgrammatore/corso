@@ -5,37 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DOM Tree</title>
   <style>
-    .red {
-      color: red;
+    .alert {
+      padding: 15px;
+      border: 1px solid #d6e9c6;
+      border-radius: 4px;
+      color: #3c763d;
+      background-color: #dff0d8;
+      width: 100%;
     }
-    .yellow {
-      color: yellow;
+    
+    .w-50 {
+      width: 50%;
+    }
+    .w-75 {
+      width: 75%;
+    }
+    .w-25 {
+      width: 25%;
+    }
+    .alerts-container  {
+      border: 1px dotted red;
+      padding: 20px;
     }
   </style>
 <body>
-  <ol id="ol" data-something="non-standard" data-someone="non-standard">
-    <li class="red">NodeJs</li>
-    <li class="yellow">DOM</li>
-    <li class="red">BOM</li>
-  </ol>
-  <ul>
-    <li>1</li>
-    <li>2</li>
-  </ul>
+  <div class="alerts-container">
+    <div class="alert w-50 red">
+      <strong>Hi Marco!!</strong> there's an importante message for you!!
+    </div>
+  </div>
+  <button id="toggleColor">Toggle Color</button>
+  <button id="resize50">
+    <strong>Resize</strong> to 50%
+  </button>
   <script>
-    const ol = document.getElementById('ol')
-    const lis = ol.getElementsByTagName('li')
-    //console.dir(lis)
-    //const yellowLis = ol.getElementsByClassName('yellow')
-    //const yellowLis = ol.querySelector('.red')
-    //console.log(yellowLis.toString())
-    /*console.log(ol.hasAttribute('something'))
-    console.log(ol.getAttribute('something'))
-    ol.setAttribute('something', 'modified')
-    console.log(ol.getAttribute('something'))
-    ol.removeAttribute('something')
-    console.log(ol.hasAttribute('something'))*/
-    console.log(ol.dataset['something'])
+    class Resizer {
+      constructor(resize) {
+        this.resize = resize
+      }
+      handleEvent(event){
+        console.log(event.target, event.currentTarget, this)
+      
+        const alert = document.querySelector('.alert')
+        if(alert.classList.contains(this.resize)) return
+        alert.classList.add(this.resize)
+      }
+    }
+    const div = document.createElement('div')
+    div.className = 'alert'
+    div.innerHTML = '<strong>Hi Adrian!!</strong> there\'s a new blackboard for you'
+    const div2 = div.cloneNode(true)
+    div2.innerHTML = '<strong>Hi Davide!!</strong> there\'s a new blackboard for you'
+    const container = document.querySelector('.alerts-container')
+    container.append('ciao mondo')
+
+    container.prepend(div2)
+    const buttonToggle = document.getElementById('toggleColor')
+    buttonToggle.addEventListener('click', function(event) {
+      const alert = document.querySelector('.alert')
+      alert.classList.toggle('red')
+    })
+    const buttonResize50 = document.getElementById('resize50')
+    const strongResize = buttonResize50.getElementsByTagName('strong')[0]
+    buttonResize50.addEventListener('click', new Resizer('w-50'))
+    strongResize.addEventListener('click', function(event) {
+      event.stopPropagation()
+    })
   </script>
 </body>
 </html>

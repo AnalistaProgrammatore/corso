@@ -26,7 +26,7 @@ wss.on('connection', ws => {
 })
 
 redisSubscriber.subscribe('chat_messages')
-redisSubscriber.on('message', (channel, ) => {
+redisSubscriber.on('message', (channel, message) => {
   console.log(`Message: ${message} received on channel: ${channel}`)
   broadcast(message)
 })

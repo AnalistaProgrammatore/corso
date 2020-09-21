@@ -1,0 +1,13 @@
+<%- include('./partials/head') %>
+<div class="container">
+  <h3 class=" text-center">Messaging</h3>
+  <div class="messaging">
+    <div class="inbox_msg">
+      <%- include('./partials/chat/people') %>
+      <%- include('./partials/chat/messages') %>
+    </div>
+  </div>
+</div>
+<%- include('./modals/add-group') %>
+<script src="/assets/js/chat.js"></script>
+<%- include('./partials/footer') %>

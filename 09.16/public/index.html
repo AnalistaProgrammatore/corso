@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Tree</title>
+  <style>
+    body {
+      font-size: 10px;
+    }
+
+    h1, h2 {
+      padding-top: 10px;
+      height: 30px;
+      font-size: 2em;
+    }
+
+    .synopsis em {
+      height: 200px;
+      color: red;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 50px;
+      right: 50px;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .relative.absolute {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+    
+    .box {
+      height: 300px;
+      width: 50%;
+    }
+  </style>
+<body>
+  <div class="box">
+    <h1 class="synopsis absolute">Hello 
+      <em>Marc
+        <em>o</em>
+      </em>!!
+    </h1>
+  </div>
+  <div class="box relative">
+    <h2 class="synopsis absolute">Hello <em>Claudio</em>!!</h2>
+  </div> 
+</body>
+</html>
