@@ -1,0 +1,53 @@
+<%- include('partials/head', { cssFile: 'login.css' }) %> 
+  <div class="container-fluid">
+    <div class="row no-gutter">
+      <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+      <div class="col-md-8 col-lg-6">
+        <div class="login d-flex align-items-center py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9 col-lg-8 mx-auto">
+                <h3 class="login-heading mb-4">Register to Tenjin Schcool</h3>
+                <form class="form-signin" method="POST">
+                  <div class="form-label-group">
+                    <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
+                    <label for="inputUserame">Username</label>
+                  </div>
+    
+                  <div class="form-label-group">
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                    <label for="inputEmail">Email address</label>
+                  </div>
+                  
+                  <hr>
+    
+                  <div class="form-label-group">
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    <label for="inputPassword">Password</label>
+                  </div>
+                  
+                  <div class="form-label-group">
+                    <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
+                    <label for="inputConfirmPassword">Confirm password</label>
+                  </div>
+
+                  <hr>
+
+                  <div class="form-label-group">
+                    <select class="form-control" placeholder="Choose your role at Tenjin School" required>
+                      <option value="student">Student</option>
+                      <option value="teacher">Teacher</option>
+                    </select>
+                  </div>
+    
+                  <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
+                  <a class="d-block text-center mt-2 small" href="signin.html">Sign In</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<%- include('partials/footer_auth') %>  
