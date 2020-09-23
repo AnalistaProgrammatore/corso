@@ -8,37 +8,31 @@
           <div class="row">
             <div class="col-md-9 col-lg-8 mx-auto">
               <h3 class="login-heading mb-4">Register to DidactChat</h3>
-              <form class="form-signin">
+              <div id="messageContainer"></div>
+              <form class="form-signin" id="signupForm" novalidate>
                 <div class="form-label-group">
-                  <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
+                  <input type="text" required name="username" id="inputUserame" class="form-control" placeholder="Username" autofocus>
                   <label for="inputUserame">Username</label>
                 </div>
   
                 <div class="form-label-group">
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                  <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address">
                   <label for="inputEmail">Email address</label>
                 </div>
                 
                 <hr>
   
                 <div class="form-label-group">
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password">
                   <label for="inputPassword">Password</label>
                 </div>
                 
                 <div class="form-label-group">
-                  <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
+                  <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password">
                   <label for="inputConfirmPassword">Confirm password</label>
                 </div>
 
                 <hr>
-
-                <div class="form-label-group">
-                  <select class="form-control" placeholder="Choose your role at Tenjin School" required>
-                    <option value="student">Student</option>
-                    <option value="teacher">Teacher</option>
-                  </select>
-                </div>
   
                 <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
                 <a class="d-block text-center mt-2 small" href="signin.html">Sign In</a>
@@ -50,4 +44,5 @@
     </div>
   </div>
 </div>
+<script src="/assets/js/signup.js"></script>
 <%- include('./partials/footer') %>

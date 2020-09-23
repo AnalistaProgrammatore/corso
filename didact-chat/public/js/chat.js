@@ -1,4 +1,5 @@
 (function(){
+  let user
   const incomingMessageTemplate = (message) => `
     <div class="incoming_msg">
       <div class="incoming_msg_img"> <img src="${message.avatar}" alt="sunil"> </div>

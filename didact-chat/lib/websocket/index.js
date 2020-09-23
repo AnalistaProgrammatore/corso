@@ -16,7 +16,6 @@ module.exports = (server) => {
 
   redisSubscriber.subscribe('chat_messages')
   redisSubscriber.on('message', (channel, message) => {
-    console.log(channel)
     broadcast(message)
   })
 }

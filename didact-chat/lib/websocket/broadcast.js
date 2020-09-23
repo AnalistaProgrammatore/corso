@@ -6,7 +6,6 @@ module.exports = wss => msg => {
       date: formatDate(new Date()),
       avatar: 'https://bootdey.com/img/Content/avatar/avatar1.png'
     }
-    console.log(client)
     client.send(JSON.stringify(msgObject))
   })
 }
