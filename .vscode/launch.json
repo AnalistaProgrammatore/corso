@@ -1146,6 +1146,45 @@
             "args": [
                 "8080",
             ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "09.15",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/09.15/app.js",
+            "cwd": "${workspaceFolder}/09.15",
+            "args": [
+                "8080",
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "09.16",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/09.16/app.js",
+            "cwd": "${workspaceFolder}/09.16",
+            "args": [
+                "8080",
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "09.21",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/09.21/app.js",
+            "cwd": "${workspaceFolder}/09.21",
+            "args": [
+                "8080",
+            ]
         }
     ]
 }
