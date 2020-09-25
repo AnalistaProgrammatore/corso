@@ -1176,15 +1176,16 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "09.21",
+            "name": "didact-chat",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/09.21/app.js",
-            "cwd": "${workspaceFolder}/09.21",
-            "args": [
-                "8080",
-            ]
+            "program": "${workspaceFolder}/didact-chat/app.js",
+            "cwd": "${workspaceFolder}/didact-chat",
+            "env": {
+                "PORT": "8080",
+                "STORE": "redisdown"
+            }
         }
     ]
 }
